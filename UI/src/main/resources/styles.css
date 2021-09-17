@@ -1,0 +1,19 @@
+.button{
+    -fx-background-color: transparent;
+    -fx-border-style: none;
+}
+
+.button:hover{
+    -fx-text-fill: #e74c3c;
+}
+
+.root {
+    -fx-background-image: url('icons/covid.jpg');
+    -fx-background-size: cover;
+    -fx-opacity: 0.9;
+}
+
+.child {
+    -fx-background-image: url('icons/covid.jpg');
+    -fx-background-size: cover;
+}

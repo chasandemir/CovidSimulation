@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+
+<GridPane alignment="CENTER" prefHeight="600.0" prefWidth="800.0" styleClass="root" stylesheets="@../../../styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uni.project.ui.SettingsController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minViewportHeight="400.0" minViewportWidth="600.0" minWidth="-Infinity" prefHeight="400.0" prefViewportHeight="400.0" prefViewportWidth="600.0" prefWidth="600.0" style="-fx-background-color: transparent;">
+         <content>
+            <GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="598.0" prefWidth="798.0" style="-fx-background-color: transparent;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="535.0" prefWidth="890.0" spacing="5.0" GridPane.columnSpan="3" GridPane.rowSpan="2">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="450.0" spacing="4.0">
+                           <children>
+                              <Separator opacity="0.8" prefWidth="180.0">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Separator>
+                              <Label text="General" textFill="#ffffffe6">
+                                 <font>
+                                    <Font name="Segoe UI" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Separator prefWidth="180.0">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Separator>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="555.0" spacing="20.0">
+                           <children>
+                              <Label text="Save Progression" textFill="#ffffffe6">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                              <CheckBox alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="484.0" spacing="20.0">
+                           <children>
+                              <Label text="Board Size" textFill="#ffffffe6">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox prefHeight="26.0" prefWidth="62.0" promptText="5x5" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="484.0" spacing="20.0">
+                           <children>
+                              <Label text="Initial Population" textFill="#ffffffe6">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox prefHeight="26.0" prefWidth="58.0" promptText="20" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="484.0" spacing="20.0">
+                           <children>
+                              <Label text="Move Rate" textFill="#ffffffe6">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Slider snapToTicks="true" />
+                              <Label text="0%" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="64.0" prefWidth="484.0" spacing="4.0">
+                           <children>
+                              <Separator opacity="0.8" prefWidth="180.0">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Separator>
+                              <Label text="Vaccines" textFill="#ffffffe6">
+                                 <font>
+                                    <Font name="Segoe UI" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Separator prefWidth="180.0">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Separator>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="782.0" spacing="100.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Back" textFill="#ffffffe5">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontIcon iconColor="WHITE" iconLiteral="fa-mail-reply" />
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Reset to Default" textFill="#ffffffe6">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontIcon iconColor="WHITE" iconLiteral="fa-rotate-left" />
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Save" textFill="#ffffffe6">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontIcon iconColor="WHITE" iconLiteral="fa-save" />
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</GridPane>
